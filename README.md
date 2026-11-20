@@ -4,41 +4,37 @@
 
 # Leonida Legend — GTA VI Trophy Guide & Tracker
 
-![Leonida Legend](https://img.shields.io/badge/make.fun-bounty-gta6--trophy--guide--01)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![GTA VI trophies: 55](https://img.shields.io/badge/trophies-55-blue)
-
 An offline, open-source guide and tracker for all 55 PlayStation 5 trophies of
-Grand Theft Auto VI. Made for the [$250 bounty on make.fun](https://make.fun/bounty/gta6-trophy-guide-01).
+Grand Theft Auto VI. Built for the [$250 bounty on make.fun](https://make.fun/bounty/gta6-trophy-guide-01).
 
-## What it is
+## The list
 
-A static web app that opens in a desktop browser and works with the network
-off. It tracks your progress on the official list — every trophy with its
-official name, description and grade — and guides you to each one:
+55 trophies in all: 1 platinum, 2 gold, 6 silver, 46 bronze. 28 of them are
+hidden on PlayStation until earned. No online trophies, no DLC, one
+playthrough — roughly 200 hours to the platinum (PowerPyx; Push Square says
+250 or more).
+
+## What it does
+
+A static web app that opens in a desktop browser and keeps working with the
+network off. It tracks your progress on the official list and guides you to
+every trophy:
 
 - **Checklist** — tick trophies off; progress is saved in the browser
-  (localStorage), with export to a JSON file and import back. Filters by grade
-  and kind, full-text search, a "hide earned" switch, and a spoiler setting
-  that hides story trophies until you earn them. A "Next up" planner points at
-  the next trophy in roadmap order.
-- **Roadmap** — three stages to the platinum (story first, ~60–80 hours; the
-  100% checklist, ~100 hours; Strangers & Freaks and cleanup, ~10 hours),
-  each with its trophies and per-stage progress.
-- **Missables** — the one trophy that may be missable (Positive Mental
-  Attitude, and the Chapter 1 meditation that protects it), plus the things
+  (localStorage) and can be exported to a JSON file and imported back.
+  Filters by grade and kind, full-text search, a "hide earned" switch, and a
+  spoiler setting that hides story trophies until you earn them. A "Next up"
+  planner points at the next trophy in roadmap order.
+- **Roadmap** — three stages to the platinum: the story first (~60–80 hours),
+  then the 100% checklist (~100 hours), then Strangers & Freaks and cleanup
+  (~10 hours). Each stage lists its trophies with per-stage progress.
+- **Missables** — the one trophy that may be missable, Positive Mental
+  Attitude (and the Chapter 1 meditation that protects it), plus the things
   that look missable but are not.
-- **A guide to each trophy, in our own words, with its sources named beside
-  it** — what to do, where, and when it can be missed. Nothing is copied from
-  the cited guides. Where the guide writers have not yet pinned a method
-  down, the guide says so plainly instead of inventing a step.
-
-## The list at a glance
-
-55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze. 28 are hidden on
-PlayStation until earned (12 story trophies and 16 hidden side trophies).
-No online trophies, no DLC, one playthrough, about 200 hours to the
-platinum (PowerPyx; Push Square says 250 or more).
+- **A guide to each trophy, written in our own words, with its sources named
+  beside it** — what to do, where, and when it can be missed. Nothing is
+  copied from the cited guides. Where the method has not yet been pinned down,
+  the guide says so plainly instead of inventing a step.
 
 ## Run it
 
@@ -47,7 +43,7 @@ node serve.ts
 # open http://localhost:8080
 ```
 
-No build step, no network at run time. Every file the app loads is under
+No build step, no network at run time. Every file the app loads lives under
 `app/`.
 
 ## Hand it in
