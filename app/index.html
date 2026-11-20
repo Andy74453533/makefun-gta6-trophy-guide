@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-text">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Legend</h1>
+    <p class="subtitle">The offline guide and tracker for every GTA VI trophy — checklist, roadmap, missables, and a guide to each, with its sources. No account, no network, no ads.</p>
+  </div>
+  <div class="progress-card" aria-label="Progress">
+    <div class="big-count"><span id="earned-count">0</span><span class="of"> / 55</span></div>
+    <div class="bar"><div class="bar-fill" id="bar-fill"></div></div>
+    <p id="grade-counts" class="grade-counts"></p>
+    <p id="next-up" class="next-up"></p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button type="button" data-view="checklist" class="active">Checklist</button>
+  <button type="button" data-view="roadmap">Roadmap</button>
+  <button type="button" data-view="missables">Missables</button>
+  <button type="button" data-view="about">About &amp; Sources</button>
+</nav>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div class="controls">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission or place…" autocomplete="off"></label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="strangers">Strangers &amp; Freaks</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="activities">Activities</option>
+          <option value="crime">Crime &amp; heists</option>
+          <option value="combat">Combat</option>
+          <option value="exploration">Exploration</option>
+          <option value="completion">100% completion</option>
+          <option value="misc">Miscellaneous</option>
+          <option value="platinum">Platinum</option>
+        </select>
+      </label>
+      <label class="check"><input id="missable-only" type="checkbox"> Missable only</label>
+      <label class="check"><input id="hide-earned" type="checkbox"> Hide earned</label>
+      <label class="check"><input id="spoiler" type="checkbox" checked> Hide story spoilers</label>
+      <button id="theme" type="button">Light theme</button>
+      <button id="export" type="button">Export progress</button>
+      <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+    </div>
+    <p id="result-count" class="result-count"></p>
+    <div id="list" class="list"></div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <h2>Roadmap to the platinum</h2>
+    <p class="lede">One playthrough, about 200 hours (PowerPyx; Push Square says 250 or more). No online trophies, no DLC, no difficulty settings, no mission replay — but free roam continues after the story, and every trophy can be earned in that one run.</p>
+    <div id="roadmap"></div>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <h2>Missable trophies</h2>
+    <div id="missables"></div>
+    <h3>Looks missable, but is not</h3>
+    <ul class="plain">
+      <li><strong>Every story trophy</strong> — the 12 chapter and mission trophies unlock automatically and none can be missed.</li>
+      <li><strong>Stranger quest givers who go quiet</strong> — Kenton, for one, disappears for part of the story. Every trophy-related quest giver comes back and stays after the story.</li>
+      <li><strong>Optional missions that vanish</strong> — many disappear after a while, but there are far more than the 100 the checklist needs.</li>
+      <li><strong>Timed quests</strong> (hourglass icon) — they can fail on a timer, but none is tied to a trophy.</li>
+      <li><strong>Fences that leave for good</strong> — none of them has a trophy quest.</li>
+      <li><strong>Magazine collectibles in story buildings</strong> — they also spawn elsewhere.</li>
+      <li><strong>The Irredeemable criminal profile</strong> — permanent, and it makes the police more aggressive, but it does not lock any trophy.</li>
+    </ul>
+    <p class="note">Source: PowerPyx's trophy guide and roadmap; Push Square lists no known missables. Save advice from PowerPyx: the game has 15 manual save slots plus 1 autosave, and missions cannot be replayed, so keep a save at the start and end of each chapter.</p>
+  </section>
+
+  <section id="view-about" class="view" hidden>
+    <h2>About this guide</h2>
+    <p><strong>What it is.</strong> A free, open-source, offline trophy guide and tracker for Grand Theft Auto VI on PlayStation 5. It covers all 55 official trophies — 1 platinum, 2 gold, 6 silver, 46 bronze, 28 of them hidden until earned — with the official name, description and grade of each, a checklist saved in your browser, a roadmap to the platinum, and a guide to each trophy in our own words, with its sources named beside it.</p>
+    <p><strong>How the guides were written.</strong> Every guide is written from the official trophy descriptions and the published guides cited beside it — PowerPyx, Push Square, KeenGamer, GTABase and RadioTimes, with the official list itself from Exophase and PSNProfiles. Nothing is copied from those guides: a source is cited, never copied. Where the guide writers have not yet pinned a method down (five trophies at launch), the guide says so plainly instead of inventing a step.</p>
+    <p><strong>What we do not claim.</strong> The game is a day old and nobody on this guide's team has played it through. Anything marked “not yet confirmed” is exactly that. Check the cited source for the latest word, and treat a guide that claims certainty about an unconfirmed trophy with suspicion.</p>
+    <p><strong>Privacy.</strong> Your progress lives only in this browser (localStorage). Export writes a JSON file on your machine; import reads one back. The app makes no network request at all — the source links open only if you click them.</p>
+    <h3>Sources</h3>
+    <ul id="source-list" class="plain"></ul>
+    <p class="note">Grand Theft Auto and GTA are trademarks of Rockstar Games. This guide is an unofficial fan-made tracker, not affiliated with Rockstar Games, and it uses no Rockstar logo or official artwork.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Legend — an unofficial, offline GTA VI trophy guide &amp; tracker. 55 trophies, 1 platinum, 2 gold, 6 silver, 46 bronze. Built from the official list (Exophase / PSNProfiles, 18 Nov 2026).</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
